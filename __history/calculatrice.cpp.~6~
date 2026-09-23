@@ -7,8 +7,6 @@
 
 using namespace std;
 
-
-
 int main()
 {    float valeur1, valeur2;
 		float resultat;
@@ -27,14 +25,6 @@ int main()
 		fichier.open("journal.log",ios_base::app);
 		fichier <<valeur1 <<operateur <<valeur2 <<"="<<resultat<<endl;
 		fichier.close();
-        time_t rawtime;
-		struct tm * timeinfo;
-
-		time (&rawtime);
-		timeinfo = localtime (&rawtime);
-		printf ("Current local time and date: %s", asctime(timeinfo));
-
-
 
 		}
 		return 0;
