@@ -6,7 +6,7 @@ int main()
 {    float valeur1, valeur2;
 		float resultat;
 		char operateur;
-		ofstream fichier; //ofstream=classe (o pour output) fichier=objet
+		ofstream fichier; //ofstream=classe (o pour input) fichier=input
 		while(true)
 	{
 
