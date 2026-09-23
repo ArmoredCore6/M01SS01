@@ -1,14 +1,12 @@
-#include <iostream> //input output stream = flux(de données)
-#include <fstream> //file stream = flux(de donnée)
+#include <iostream>
 using namespace std;
 
 int main()
-{    float valeur1, valeur2;
+{
+	while(true)
+	{	float valeur1, valeur2;
 		float resultat;
 		char operateur;
-		ofstream fichier; //ofstream=classe (o pour input) fichier=input
-		while(true)
-	{
 
 		cout<<"rentrer le calcul : ";
 		cin>>valeur1>>operateur>>valeur2;
@@ -17,9 +15,6 @@ int main()
 		if (operateur=='*') {resultat = valeur1 * valeur2;}
 		if (operateur=='/') {resultat = valeur1 / valeur2;}
 		cout << "Le resultat du calcul est : " << resultat <<endl;
-		fichier.open("journal.log",ios_base::app);
-		fichier <<valeur1 <<operateur <<valeur2 <<"="<<resultat<<endl;
-		fichier.close();
 
 		}
 		return 0;
